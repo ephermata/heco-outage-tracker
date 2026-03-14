@@ -1,1 +1,41 @@
-<h1>Initializing HECO Tracker</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HECO Outage Status - East Honolulu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background-color: #f4f4f9; color: #333; }
+        .container { max-width: 800px; margin: 40px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #d32f2f; margin-top: 0; }
+        h2 { color: #555; font-size: 1.2em; margin-bottom: 5px; }
+        .timestamp { color: #888; font-size: 0.9em; margin-bottom: 25px; }
+        .status-box { background-color: #e8f5e9; border-left: 5px solid #4caf50; padding: 15px; margin-bottom: 25px; border-radius: 4px; }
+        .status-box.fragile { background-color: #fff3e0; border-left-color: #ff9800; }
+        .status-box p { margin: 0 0 10px 0; }
+        .status-box p:last-child { margin: 0; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+    </style>
+    <meta http-equiv="refresh" content="300">
+</head>
+<body>
+    <div class="container">
+        <h1>HECO Power Outage Status</h1>
+        <h2>East Honolulu / Hawaii Kai / Kalaniana'ole Hwy</h2>
+        <div class="timestamp" id="time">Last Updated: March 14, 2026 (Live)</div>
+        
+        <div class="status-box fragile">
+            <p><strong>📍 Local Status:</strong> Power was restored to your immediate area early this morning.</p>
+            <p><strong>⚠️ Grid Warning:</strong> The grid remains fragile. East Honolulu is currently relying on a single transmission line due to severe Kona low storm damage to the other lines crossing the Ko'olau range. Prepare for potential secondary outages.</p>
+        </div>
+
+        <h3>Latest Island-Wide & Regional Info</h3>
+        <ul>
+            <li><strong>Recent Outages:</strong> Over 13,000 customers in the wider Aina Haina to Hawaii Kai and Waimanalo stretch experienced secondary outages last night.</li>
+            <li><strong>Repairs:</strong> Crews are actively working to repair the damaged transmission lines, but hazardous weather conditions are causing delays.</li>
+            <li><strong>Traffic:</strong> Some traffic lights may still be out on Kalaniana'ole Hwy. Treat dark intersections as 4-way stops.</li>
+        </ul>
+        <p style="color: #777; font-size: 0.85em; margin-top: 30px;"><em>This page auto-refreshes every 5 minutes. The backend monitoring checks for updates every 30 minutes. Powered by OpenClaw.</em></p>
+    </div>
+</body>
+</html>
