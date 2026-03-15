@@ -3,33 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HECO Outage Tracker - East Honolulu & Hawaii Kai</title>
+    <title>HECO Outage Tracker: East Honolulu & Hawaii Kai</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f7fa; }
-        .header { background-color: #1a365d; color: white; padding: 20px; border-radius: 8px 8px 0 0; }
-        .content { background-color: white; padding: 20px; border-radius: 0 0 8px 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .status-alert { background-color: #fed7d7; border-left: 4px solid #e53e3e; padding: 15px; margin-bottom: 20px; color: #742a2a; font-weight: bold; }
-        h1 { margin-top: 0; }
-        .timestamp { color: #a0aec0; font-size: 0.9em; margin-bottom: 20px; }
-        ul { margin-top: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #004d80;
+            color: white;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .status-alert {
+            background-color: #ffe0e0;
+            border-left: 5px solid #d9534f;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        h2 {
+            color: #d9534f;
+            margin-top: 0;
+        }
+        .timestamp {
+            font-size: 0.9em;
+            color: #666;
+            text-align: right;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>HECO Outage Status: East Honolulu & Hawaii Kai</h1>
+        <h1>HECO Power Outage Tracker</h1>
+        <p>East Honolulu, Hawaii Kai & Kalanianaʻole Hwy Corridor</p>
     </div>
+    
     <div class="content">
-        <p class="timestamp">Last Updated: March 14, 2026</p>
         <div class="status-alert">
-            Status: ACTIVE OUTAGES - Extended outages likely overnight
+            <h2>Current Status: Severe Outages</h2>
+            <p><strong>Impact:</strong> Hazardous weather conditions from a severe Kona storm have damaged the transmission lines serving Windward Oʻahu, Hawaiʻi Kai, and East Honolulu. Over 130,000 HECO customers island-wide were left without power.</p>
+            <p><strong>Update:</strong> HECO crews are actively working on restoration as conditions allow. Residents in Hawaii Kai and East Honolulu should prepare for extended outages that could last for days.</p>
         </div>
-        <h2>Latest Updates</h2>
+        
+        <h3>Safety Reminders:</h3>
         <ul>
-            <li><strong>Current Impact:</strong> Over 13,000 customers from Aina Haina to Hawaii Kai and Waimanalo (including Hahaione, Hawaii Loa Ridge, Portlock, and Kalama Valley) lost power again around 9:11 p.m.</li>
-            <li><strong>Cause:</strong> Severe weather from a Kona Low storm has damaged multiple transmission lines running along the Koolau range that service East Honolulu.</li>
-            <li><strong>HECO Advisory:</strong> Residents in Hawaii Kai and East Honolulu should prepare for extended outages lasting overnight or longer, as hazardous conditions continue to affect repair efforts.</li>
+            <li>Treat all downed power lines as live and dangerous. Stay at least 30 feet away.</li>
+            <li>Keep refrigerators and freezers closed to preserve food.</li>
+            <li>Use flashlights instead of candles to prevent fire hazards.</li>
+            <li>If you have a portable generator, ensure it is operated outside in a well-ventilated area.</li>
         </ul>
-        <p><em>Check the <a href="https://www.hawaiianelectric.com/safety-and-outages/outage-map">Hawaiian Electric Outage Map</a> for official updates.</em></p>
+        
+        <div class="timestamp">
+            Last Updated: March 15, 2026, 1:41 AM (UTC)
+        </div>
+    </div>
+    
+    <div class="footer">
+        Automated tracker. For official updates, please visit the <a href="https://www.hawaiianelectric.com/safety-and-outages/power-outages" target="_blank">Hawaiian Electric Outage Center</a>.
     </div>
 </body>
 </html>
