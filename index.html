@@ -3,40 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HECO Outage Tracker: East Honolulu & Hawaii Kai</title>
+    <title>HECO Power Outage Tracker - East Honolulu</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f5f7fa; color: #333; }
-        .header { background-color: #0056b3; color: white; padding: 20px; border-radius: 8px 8px 0 0; text-align: center; }
-        .content { background-color: white; padding: 30px; border-radius: 0 0 8px 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .alert { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; padding: 15px; border-radius: 4px; margin-bottom: 20px; }
-        .timestamp { font-size: 0.9em; color: #6c757d; text-align: center; margin-top: 20px; font-style: italic; }
-        h1, h2 { margin-top: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 20px; background-color: #f8f9fa; color: #333; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #d32f2f; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .timestamp { color: #666; font-size: 0.9em; margin-bottom: 20px; font-style: italic; }
+        .status-box { background-color: #fff3cd; border-left: 5px solid #ffc107; padding: 15px; margin: 20px 0; }
+        .status-resolved { background-color: #d4edda; border-left: 5px solid #28a745; padding: 15px; margin: 20px 0; }
+        .region { font-weight: bold; color: #0056b3; }
         ul { line-height: 1.6; }
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="container">
         <h1>HECO Power Outage Status</h1>
-        <h2>East Honolulu, Hawaii Kai & Kalaniana'ole Highway</h2>
-    </div>
-    <div class="content">
-        <div class="alert">
-            <strong>⚠️ Ongoing Weather Disruptions (March 2026)</strong><br>
-            Recent severe weather has impacted transmission lines serving the Windward and East Honolulu areas.
-        </div>
+        <div class="timestamp">Last Updated: March 16, 2026</div>
         
-        <h3>Latest Updates</h3>
+        <div class="status-box">
+            <h3>Current Situation: <span style="color: #d32f2f;">Recovery Mode</span></h3>
+            <p>Following a severe Kona Low storm over the weekend, Hawaiian Electric (HECO) is actively restoring power. At the peak, over 121,000 customers were affected on Oahu.</p>
+        </div>
+
+        <h3>Affected Areas: East Honolulu & Hawaii Kai</h3>
         <ul>
-            <li><strong>Areas Affected:</strong> Aina Haina, Hawaii Kai, Waimanalo, Hahaione, Hawaii Loa Ridge, Portlock, and Kalama Valley.</li>
-            <li><strong>Recent Status:</strong> Crews have been working to restore major transmission lines. Recent outages impacted roughly 13,000 customers in the East Honolulu/Hawaii Kai corridor after a single remaining transmission line was damaged by hazardous weather conditions.</li>
-            <li><strong>Statewide Context:</strong> HECO is currently responding to widespread outages across Oahu, Hawaii Island, and Maui County affecting tens of thousands of customers.</li>
+            <li><span class="region">Kalaniana'ole Highway Corridor:</span> Major transmission lines near Waimanalo running into East Honolulu were damaged by high winds and downpours.</li>
+            <li><span class="region">Neighborhoods Impacted:</span> Aina Haina, Hawaii Loa Ridge, Hahaione, Portlock, and Kalama Valley experienced significant, repeated outages over the weekend.</li>
+            <li><span class="region">Restoration Progress:</span> As of late Sunday night, crews have restored power to the vast majority of the island, with remaining Oahu outages reduced to approximately 7,000 customers. Crews continue to repair downed poles and damaged equipment.</li>
         </ul>
         
-        <p><em>Please exercise caution on Kalaniana'ole Highway, especially if traffic signals are without power. Treat all dark intersections as four-way stops.</em></p>
-        
-        <div class="timestamp">
-            Last Updated: Monday, March 16th, 2026 — 7:41 PM (UTC)
-        </div>
+        <p><strong>Next Steps:</strong> HECO advises residents still without power to check their home circuit breakers before calling the trouble line, as individual service drops may require targeted repairs.</p>
     </div>
 </body>
 </html>
