@@ -3,39 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HECO Outage Tracker - East Honolulu & Hawaii Kai</title>
+    <title>HECO Power Outage Status - East Honolulu</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f7f6; color: #333; }
-        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #d9381e; font-size: 24px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .status-badge { display: inline-block; padding: 8px 12px; border-radius: 4px; font-weight: bold; background-color: #ffebee; color: #c62828; margin-bottom: 20px; }
-        .update-time { font-size: 0.9em; color: #666; margin-bottom: 20px; }
-        .content { line-height: 1.6; }
-        .footer { margin-top: 30px; font-size: 0.8em; color: #999; text-align: center; border-top: 1px solid #eee; padding-top: 10px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #0056b3;
+            margin: 0;
+            font-size: 24px;
+        }
+        .timestamp {
+            color: #777;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .status-box {
+            padding: 20px;
+            border-left: 5px solid #ffcc00;
+            background-color: #fff9e6;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .status-critical {
+            border-left-color: #dc3545;
+            background-color: #f8d7da;
+        }
+        .status-ok {
+            border-left-color: #28a745;
+            background-color: #d4edda;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        ul {
+            line-height: 1.6;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+        a {
+            color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>HECO Power Outage Status</h1>
-        <div class="status-badge">RECENT MAJOR OUTAGES REPORTED</div>
-        <div class="update-time">Last Updated: March 17, 2026</div>
-        
-        <div class="content">
-            <h3>East Honolulu, Hawaii Kai & Kalaniana'ole Hwy</h3>
-            <p><strong>Recent Events:</strong> Severe stormy weather over the past few days caused significant damage to transmission lines serving Windward O'ahu, Hawaii Kai, and East Honolulu. A major transmission line failure occurred, temporarily knocking out power for nearly 30,000 customers.</p>
-            <p>Secondary outages were recently reported affecting over 13,000 customers across Aina Haina, Hawaii Kai, Hahaione, Hawaii Loa Ridge, Portlock, Kalama Valley, and Waimanalo.</p>
-            <p><strong>Current Action:</strong> HECO crews are actively working to restore and stabilize power statewide. Residents in East Honolulu and along the Kalaniana'ole Highway corridor should remain prepared for intermittent disruptions as repairs continue on the main transmission lines.</p>
-            
-            <h3>Resources</h3>
+        <header>
+            <h1>Hawaiian Electric (HECO) Outage Tracker</h1>
+            <div class="timestamp" id="last-updated">Last Updated: March 17, 2026 11:41 AM UTC</div>
+        </header>
+
+        <div class="status-box status-critical">
+            <h2>Current Status: Regional Outages / Recovery Ongoing</h2>
+            <p>Recent storms have caused significant damage to transmission lines. Here is the latest available information for East Honolulu and surrounding areas:</p>
             <ul>
-                <li><a href="https://www.hawaiianelectric.com/safety-and-outages/power-outages/oahu-outage-map" target="_blank">Official Oahu Outage Map</a></li>
-                <li>Trouble Line: Available 24/7</li>
+                <li><strong>East Honolulu / Hawaii Kai:</strong> Recent reports indicated over 13,000 customers lost power along the Kalaniana'ole Highway corridor (Aina Haina, Hawaii Kai, Hahaione, Portlock, Kalama Valley, Waimanalo).</li>
+                <li><strong>Windward / East Oahu Link:</strong> Hazardous weather damaged the transmission lines serving Windward Oahu and the Hawaii Kai/East Honolulu areas.</li>
+                <li><strong>Statewide Impact:</strong> HECO has been working on "all hands on deck" restoration efforts after widespread statewide outages.</li>
             </ul>
         </div>
+
+        <p>For official real-time updates and the outage map, please visit the <a href="https://www.hawaiianelectric.com/safety-and-outages/power-outages/oahu-outage-map" target="_blank">Hawaiian Electric Oahu Outage Map</a>.</p>
         
-        <div class="footer">
-            Automated tracking by OpenClaw • Information compiled from local news and HECO reports.
-        </div>
+        <footer>
+            <p>Automated tracker generated by OpenClaw Cron Job.</p>
+        </footer>
     </div>
 </body>
 </html>
